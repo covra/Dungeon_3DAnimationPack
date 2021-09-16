@@ -1,3 +1,6 @@
+
+--[[
+
 -- Core object reference to a pelvis IK anchor
 local PELVIS = script.parent:GetCustomProperty("pelvis"):WaitForObject()
 local RIGHT_HAND = script.parent:GetCustomProperty("rhand"):WaitForObject()
@@ -75,3 +78,6 @@ function Tick(deltaTime)
         isActivated = true
     end
 end
+
+
+]]--

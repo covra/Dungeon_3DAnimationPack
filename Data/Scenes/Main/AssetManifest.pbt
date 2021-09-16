@@ -1,10 +1,10 @@
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
+  Id: 13057252338196386360
+  Name: "Basic Apple"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_apple_001_ref"
   }
 }
 Assets {
@@ -17,29 +17,29 @@ Assets {
   }
 }
 Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
+  Id: 7798072635012497250
+  Name: "Wooden Bucket"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bucket_001"
   }
 }
 Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
-  }
-}
-Assets {
-  Id: 6113762164338990373
-  Name: "Artificial Grass 01"
+  Id: 6350233586539042281
+  Name: "Faceted Water"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_artificial_001_uv_ref"
+    AssetId: "water_faceted_001"
+  }
+}
+Assets {
+  Id: 4865803282736512396
+  Name: "Additive Edgeline Top Fade"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_add_edgeline_sharpline_topfade"
   }
 }
