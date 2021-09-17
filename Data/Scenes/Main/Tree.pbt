@@ -21,6 +21,7 @@ Objects {
   ChildIds: 7264516668055820329
   ChildIds: 1258558155938957142
   ChildIds: 2936925158032508213
+  ChildIds: 11533915852118177642
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -33,6 +34,45 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 11533915852118177642
+  Name: "test1 fly wings"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10456487538729813906
+      value {
+        Overrides {
+          Name: "Name"
+          String: "test1 fly wings"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1414.46912
+            Y: 1705.1416
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9224884056888649602
+    }
   }
 }
 Objects {
