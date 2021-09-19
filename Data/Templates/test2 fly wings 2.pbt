@@ -1,6 +1,6 @@
 Assets {
-  Id: 9224884056888649602
-  Name: "test1 fly wings"
+  Id: 13766564940711303126
+  Name: "test2 fly wings 2"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -284,17 +284,18 @@ Assets {
         Name: "dragon_model"
         Transform {
           Location {
-            X: -57.0137215
-            Y: -217.385681
-            Z: 311.861847
+            X: -57.0136719
+            Y: 305.293945
+            Z: 756.245
           }
           Rotation {
-            Pitch: 29.0343189
+            Pitch: 24.5984669
+            Yaw: 66.6982193
           }
           Scale {
-            X: 0.234540492
-            Y: 0.234540492
-            Z: 0.234540492
+            X: 0.590056896
+            Y: 0.590056896
+            Z: 0.590056896
           }
         }
         ParentId: 10456487538729813906
@@ -735,9 +736,6 @@ Assets {
         Name: "bone wing left"
         Transform {
           Location {
-            X: 0.000150868451
-            Y: -1.96895653e-05
-            Z: -0.000126190571
           }
           Rotation {
             Pitch: 9.6296711
@@ -745,9 +743,9 @@ Assets {
             Roll: 66.0484772
           }
           Scale {
-            X: 0.969675601
-            Y: 0.969676495
-            Z: 9.95552921
+            X: 0.969678
+            Y: 0.969678104
+            Z: 4.06865311
           }
         }
         ParentId: 8247416725517660851
@@ -3300,6 +3298,7 @@ Assets {
         ChildIds: 12093201118350091774
         ChildIds: 13726158979445352219
         ChildIds: 1128517162334847059
+        ChildIds: 2969935852183662281
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -3519,7 +3518,6 @@ Assets {
           }
         }
         ParentId: 7071320027185450919
-        ChildIds: 2969935852183662281
         ChildIds: 14345294059685578539
         ChildIds: 18405840035284126300
         UnregisteredParameters {
@@ -3580,26 +3578,165 @@ Assets {
         }
       }
       Objects {
+        Id: 14345294059685578539
+        Name: "bone2 wing left"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -0.223571777
+            Yaw: -4.89953613
+            Roll: 178.248199
+          }
+          Scale {
+            X: 1.8787483
+            Y: 1.8787514
+            Z: 3.96711564
+          }
+        }
+        ParentId: 1128517162334847059
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 588516550042680415
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.919471085
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.580524683
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.100000024
+              G: 0.0556291528
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2881557085076407005
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 18405840035284126300
+        Name: "Axis Helper"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Pitch: -8.08349609
+            Yaw: -1.26974487
+            Roll: 0.0897230133
+          }
+          Scale {
+            X: 2.59088707
+            Y: 2.59088707
+            Z: 2.59088707
+          }
+        }
+        ParentId: 1128517162334847059
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 12787682159672013637
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.919471085
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.580524683
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13109277466693115659
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 2969935852183662281
         Name: "sk_tail_2"
         Transform {
           Location {
-            X: -12.1841764
-            Y: 10.3443851
-            Z: -418.01416
+            X: -32.9345512
+            Y: 22.8917542
+            Z: -929.500366
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -9.99847
-            Roll: -3.53980312e-07
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.999999821
+            Y: 0.999999821
+            Z: 0.999999821
           }
         }
-        ParentId: 1128517162334847059
+        ParentId: 7071320027185450919
         ChildIds: 9842603510375295487
         ChildIds: 4518782337007779584
         ChildIds: 17004771499739955961
@@ -4184,148 +4321,6 @@ Assets {
           }
         }
         ParentId: 4154146850343388137
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 12787682159672013637
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.919471085
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.580524683
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 13109277466693115659
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 14345294059685578539
-        Name: "bone2 wing left"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: -0.223571777
-            Yaw: -4.89953613
-            Roll: 178.248199
-          }
-          Scale {
-            X: 1.8787483
-            Y: 1.8787514
-            Z: 3.96711564
-          }
-        }
-        ParentId: 1128517162334847059
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 588516550042680415
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.919471085
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.580524683
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.100000024
-              G: 0.0556291528
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 2881557085076407005
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 18405840035284126300
-        Name: "Axis Helper"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Pitch: -8.08349609
-            Yaw: -1.26974487
-            Roll: 0.0897230133
-          }
-          Scale {
-            X: 2.59088707
-            Y: 2.59088707
-            Z: 2.59088707
-          }
-        }
-        ParentId: 1128517162334847059
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

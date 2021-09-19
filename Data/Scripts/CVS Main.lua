@@ -20,4 +20,4 @@ function OnBeginOverlap(whichTrigger, other)
 	end
 end
 
-trigger.beginOverlapEvent:Connect(OnBeginOverlap)
+--trigger.beginOverlapEvent:Connect(OnBeginOverlap)
