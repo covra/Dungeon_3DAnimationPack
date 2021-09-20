@@ -45,8 +45,12 @@ Assets {
           Overrides {
             Name: "cs:offsetBody"
             Vector {
-              Z: -1500
+              Z: -500
             }
+          }
+          Overrides {
+            Name: "cs:debugPrint"
+            Bool: true
           }
           Overrides {
             Name: "cs:creatureID:tooltip"
@@ -111,6 +115,10 @@ Assets {
           Overrides {
             Name: "cs:offsetBody:ml"
             Bool: false
+          }
+          Overrides {
+            Name: "cs:debugPrint:tooltip"
+            String: "If enabled, shows extra information on print log"
           }
         }
         WantsNetworking: true
@@ -272,8 +280,8 @@ Assets {
                 TangentMode {
                   Value: "mc:erichcurvetangentmode:rctm_user"
                 }
-                Time: 0.12631166
-                Value: 0.986527085
+                Time: 0.0405256525
+                Value: 0.101324856
               }
               Keys {
                 Interpolation {
@@ -282,8 +290,8 @@ Assets {
                 TangentMode {
                   Value: "mc:erichcurvetangentmode:rctm_user"
                 }
-                Time: 0.787809134
-                Value: -1.53010285
+                Time: 0.123612218
+                Value: -0.0689706728
                 ArriveTangent: -2.35487652
                 LeaveTangent: -2.35487652
               }
@@ -294,8 +302,8 @@ Assets {
                 TangentMode {
                   Value: "mc:erichcurvetangentmode:rctm_user"
                 }
-                Time: 1.11454654
-                Value: -0.086105
+                Time: 0.210143864
+                Value: 0.0857379362
                 ArriveTangent: 1.88864934
                 LeaveTangent: 1.88864934
               }
@@ -411,6 +419,12 @@ Assets {
             Name: "cs:sk_tail_3"
             ObjectReference {
               SubObjectId: 13128584687305164215
+            }
+          }
+          Overrides {
+            Name: "cs:sk_tail_4"
+            ObjectReference {
+              SubObjectId: 16996677844002335608
             }
           }
           Overrides {
@@ -640,6 +654,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:sk_tail_4"
+            ObjectReference {
+              SubObjectId: 16996677844002335608
+            }
+          }
+          Overrides {
             Name: "cs:spine"
             ObjectReference {
               SubObjectId: 17233347006963250650
@@ -785,9 +805,6 @@ Assets {
         Name: "dragon_model"
         Transform {
           Location {
-            X: -57.0137215
-            Y: -217.385681
-            Z: 311.861847
           }
           Rotation {
             Pitch: 29.0343189
@@ -4546,6 +4563,7 @@ Assets {
         ChildIds: 11603772827402768122
         ChildIds: 13011715316289764138
         ChildIds: 8587793512780987955
+        ChildIds: 9141845694882639270
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -5397,6 +5415,65 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+      }
+      Objects {
+        Id: 9141845694882639270
+        Name: "Spark Trail Wavy VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13131178073440456323
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              G: 0.97
+              B: 0.199139014
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 28.005415
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 14542526949467869060
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -11499,6 +11576,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_prim_org_avocado_001_ref"
+      }
+    }
+    Assets {
+      Id: 14542526949467869060
+      Name: "Spark Trail Wavy VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_spark_trail_wavy"
       }
     }
     Assets {

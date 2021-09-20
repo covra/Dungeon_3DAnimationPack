@@ -34,7 +34,7 @@ function onAskRay(creatureID)
 	if creatureID == ID_CREATURE then 
 		--WINGS STOP
 		------------
-		Events.Broadcast("DRG.hold",ID_CREATURE)
+		Events.Broadcast("DRG.mov",ID_CREATURE,"holdRay")
 		--SPIN HEAD
 		-----------
 		Task.Wait(0.1 + OFFSET_TIMING_LASER)
@@ -66,15 +66,14 @@ function onAskRay(creatureID)
 			
 			while isRay do 
 				vZero = REF_POS_LASER:GetWorldPosition()
-				Vfinal = REF_POS_LASER:GetWorldPosition() + ((REF_POS_LASER:GetWorldRotation() * Rotation.New(-20,70,35)  * Vector3.ONE):GetNormalized() * 10000)						
+				Vfinal = REF_POS_LASER:GetWorldPosition() + ((REF_POS_LASER:GetWorldRotation() * Rotation.New(-20,70,35)  * Vector3.ONE):GetNormalized() * 100000)						
 				local hr = World.Raycast(vZero,Vfinal)
 				if hr then 
 					local impPos = hr:GetImpactPosition()
 					World.SpawnAsset(CORCH_VFX,{position = impPos})
 				end 
 				Task.Wait()
-			end	
-			
+			end				
 			--SWITCH OFF
 			-------------
 			for i = 1,0,-0.01 do 
@@ -84,8 +83,9 @@ function onAskRay(creatureID)
 			LASER_BEAM:SetSmartProperty("Beam Length", 0)
 			Task.Wait(0.5)
 			LASER_BEAM.visibility = Visibility.FORCE_OFF
+			Task.Wait(1)
+			Events.Broadcast("DRG.mov",ID_CREATURE,"fly")
 		end)
-		Events.Broadcast("DRG.fly",ID_CREATURE)
 	end
 end
 
