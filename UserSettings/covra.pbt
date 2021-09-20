@@ -1,12 +1,4 @@
 DebuggerSettings {
-  ScriptSettings {
-    Script {
-      Id: 9087435674997209040
-    }
-    Breakpoints {
-      LineNumber: 33
-    }
-  }
 }
 ObjectSettings {
   ObjectStates {

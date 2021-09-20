@@ -1,7 +1,7 @@
 Name: "Head"
-RootId: 3326099204986657208
+RootId: 12947779254787320054
 Objects {
-  Id: 2121753270478795328
+  Id: 5694546112176306644
   Name: "refPos"
   Transform {
     Location {
@@ -18,8 +18,8 @@ Objects {
       Z: 6.75263882
     }
   }
-  ParentId: 3326099204986657208
-  ChildIds: 15587965169407854910
+  ParentId: 12947779254787320054
+  ChildIds: 1509545376145739575
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -56,9 +56,15 @@ Objects {
       BoundsScale: 1
     }
   }
+  InstanceHistory {
+    SelfId: 5694546112176306644
+    SubobjectId: 1203611768920417141
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
+  }
 }
 Objects {
-  Id: 15587965169407854910
+  Id: 1509545376145739575
   Name: "Fire"
   Transform {
     Location {
@@ -74,8 +80,8 @@ Objects {
       Z: 0.451937973
     }
   }
-  ParentId: 2121753270478795328
-  ChildIds: 14882077607531523521
+  ParentId: 5694546112176306644
+  ChildIds: 15984024433165217129
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -91,9 +97,15 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 1509545376145739575
+    SubobjectId: 5422890887499912598
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
+  }
 }
 Objects {
-  Id: 14882077607531523521
+  Id: 15984024433165217129
   Name: "Laser Beam VFX"
   Transform {
     Location {
@@ -107,8 +119,7 @@ Objects {
       Z: 5.70149374
     }
   }
-  ParentId: 15587965169407854910
-  ChildIds: 9709530198767526335
+  ParentId: 1509545376145739575
   UnregisteredParameters {
     Overrides {
       Name: "bp:Life"
@@ -134,6 +145,14 @@ Objects {
       Name: "bp:Beam Length"
       Float: 0
     }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        G: 0.809999943
+        B: 0.230662346
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -157,175 +176,18 @@ Objects {
       AutoPlay: true
     }
   }
+  InstanceHistory {
+    SelfId: 15984024433165217129
+    SubobjectId: 9394975611339454408
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
+  }
   Relevance {
     Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
-  Id: 9709530198767526335
-  Name: "Corch VFX laser"
-  Transform {
-    Location {
-      X: 98.0158691
-      Y: -24.0282135
-      Z: 2245.71289
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.999999881
-      Y: 0.999999881
-      Z: 0.999999881
-    }
-  }
-  ParentId: 14882077607531523521
-  ChildIds: 481405941125700170
-  Lifespan: 3
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 9709530198767526335
-    SubobjectId: 18219912108588959537
-    InstanceId: 5638478758104338370
-    TemplateId: 12106987705713521155
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 481405941125700170
-  Name: "CORCH ground fire"
-  Transform {
-    Location {
-      X: -0.000357310753
-      Y: 3.16665028e-05
-      Z: -0.000197393703
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9709530198767526335
-  ChildIds: 10647053652687121681
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 481405941125700170
-    SubobjectId: 8992355733675752644
-    InstanceId: 5638478758104338370
-    TemplateId: 12106987705713521155
-  }
-}
-Objects {
-  Id: 10647053652687121681
-  Name: "Scorch Mark Decal"
-  Transform {
-    Location {
-      X: 10.8668032
-      Y: -5.41289949
-      Z: 29.7161217
-    }
-    Rotation {
-      Pitch: 83
-    }
-    Scale {
-      X: 0.960579336
-      Y: 1.31861269
-      Z: 1.75506961
-    }
-  }
-  ParentId: 481405941125700170
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Emissive Color B"
-      Color {
-        G: 0.690000057
-        B: 0.470662415
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Color C"
-      Color {
-        R: 0.331258208
-        G: 0.409999967
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Enable Hot Spot Fade"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Shape Index"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Hot Spot Size"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3685332661897534213
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 10647053652687121681
-    SubobjectId: 16835828837639981983
-    InstanceId: 5638478758104338370
-    TemplateId: 12106987705713521155
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 12629101195695332083
+  Id: 13704291388989581969
   Name: "Tongue"
   Transform {
     Location {
@@ -344,7 +206,7 @@ Objects {
       Z: 1.96430671
     }
   }
-  ParentId: 3326099204986657208
+  ParentId: 12947779254787320054
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -385,14 +247,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12629101195695332083
-    SubobjectId: 2126723539342010792
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 13704291388989581969
+    SubobjectId: 16256989059812536368
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 7329967700371818686
+  Id: 7591905333879572181
   Name: "Lower Half"
   Transform {
     Location {
@@ -407,10 +269,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3326099204986657208
-  ChildIds: 14230200415402843081
-  ChildIds: 17816595726755828723
-  ChildIds: 3036343017985809070
+  ParentId: 12947779254787320054
+  ChildIds: 9997637758752582509
+  ChildIds: 4935368761812362834
+  ChildIds: 11129199603694307611
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -424,14 +286,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 7329967700371818686
-    SubobjectId: 15526566135291935717
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 7591905333879572181
+    SubobjectId: 3956654917676670068
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 3036343017985809070
+  Id: 11129199603694307611
   Name: "Teeth"
   Transform {
     Location {
@@ -447,7 +309,7 @@ Objects {
       Z: 0.697875738
     }
   }
-  ParentId: 7329967700371818686
+  ParentId: 7591905333879572181
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -462,14 +324,14 @@ Objects {
     FilePartitionName: "Teeth_2"
   }
   InstanceHistory {
-    SelfId: 3036343017985809070
-    SubobjectId: 11016779446867241461
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 11129199603694307611
+    SubobjectId: 14249913762474398650
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 17816595726755828723
+  Id: 4935368761812362834
   Name: "Teardrop - Truncated"
   Transform {
     Location {
@@ -488,7 +350,7 @@ Objects {
       Z: 7.12192822
     }
   }
-  ParentId: 7329967700371818686
+  ParentId: 7591905333879572181
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -534,14 +396,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17816595726755828723
-    SubobjectId: 5008411805707837608
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 4935368761812362834
+    SubobjectId: 2003805787381578995
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 14230200415402843081
+  Id: 9997637758752582509
   Name: "Teardrop - Truncated"
   Transform {
     Location {
@@ -559,7 +421,7 @@ Objects {
       Z: 3.79836154
     }
   }
-  ParentId: 7329967700371818686
+  ParentId: 7591905333879572181
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -605,14 +467,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14230200415402843081
-    SubobjectId: 8627740786787838098
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 9997637758752582509
+    SubobjectId: 15352137330573472204
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 11018503419592327421
+  Id: 3861016035604983001
   Name: "Upper Half"
   Transform {
     Location {
@@ -628,18 +490,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3326099204986657208
-  ChildIds: 12030340075915868327
-  ChildIds: 11310152713692451339
-  ChildIds: 2347048296897924601
-  ChildIds: 7817989885319086907
-  ChildIds: 7433822187392153104
-  ChildIds: 14463284797953186303
-  ChildIds: 2288307011551521841
-  ChildIds: 12779735496995002926
-  ChildIds: 14194673360403597977
-  ChildIds: 6835788897398162378
-  ChildIds: 17342326668286828552
+  ParentId: 12947779254787320054
+  ChildIds: 7927314947249533331
+  ChildIds: 2126539768124054746
+  ChildIds: 15170766204849562938
+  ChildIds: 3316429495747722511
+  ChildIds: 3890076220189930715
+  ChildIds: 17872301842886001780
+  ChildIds: 17633166591041851204
+  ChildIds: 6540687284476095273
+  ChildIds: 7278188430590366337
+  ChildIds: 12770937065230450884
+  ChildIds: 13209766545258673842
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -653,14 +515,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11018503419592327421
-    SubobjectId: 3038136521936532390
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 3861016035604983001
+    SubobjectId: 7648823707362719352
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 17342326668286828552
+  Id: 13209766545258673842
   Name: "Horn"
   Transform {
     Location {
@@ -679,9 +541,9 @@ Objects {
       Z: 0.999999583
     }
   }
-  ParentId: 11018503419592327421
-  ChildIds: 15229406495664859357
-  ChildIds: 1669483330213873229
+  ParentId: 3861016035604983001
+  ChildIds: 15550533651767284019
+  ChildIds: 3211976996252165425
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -695,14 +557,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 17342326668286828552
-    SubobjectId: 4786311906884686675
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 13209766545258673842
+    SubobjectId: 16780840666771614739
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 1669483330213873229
+  Id: 3211976996252165425
   Name: "Capsule"
   Transform {
     Location {
@@ -721,7 +583,7 @@ Objects {
       Z: 8.97256374
     }
   }
-  ParentId: 17342326668286828552
+  ParentId: 13209766545258673842
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -773,14 +635,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1669483330213873229
-    SubobjectId: 11955655498277401878
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 3211976996252165425
+    SubobjectId: 8295697640481669008
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 15229406495664859357
+  Id: 15550533651767284019
   Name: "Cone - Truncated Concave"
   Transform {
     Location {
@@ -799,7 +661,7 @@ Objects {
       Z: 4.866
     }
   }
-  ParentId: 17342326668286828552
+  ParentId: 13209766545258673842
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -846,14 +708,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15229406495664859357
-    SubobjectId: 7032810547530816390
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 15550533651767284019
+    SubobjectId: 9835183140492692370
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 6835788897398162378
+  Id: 12770937065230450884
   Name: "Horn"
   Transform {
     Location {
@@ -872,9 +734,9 @@ Objects {
       Z: 0.999999583
     }
   }
-  ParentId: 11018503419592327421
-  ChildIds: 6205451705700689639
-  ChildIds: 3370887523803401450
+  ParentId: 3861016035604983001
+  ChildIds: 14337953318785422239
+  ChildIds: 6187531445871615436
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -888,14 +750,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 6835788897398162378
-    SubobjectId: 17013946980179292305
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 12770937065230450884
+    SubobjectId: 17188122782744762981
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 3370887523803401450
+  Id: 6187531445871615436
   Name: "Capsule"
   Transform {
     Location {
@@ -914,7 +776,7 @@ Objects {
       Z: 8.65903854
     }
   }
-  ParentId: 6835788897398162378
+  ParentId: 12770937065230450884
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -966,14 +828,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3370887523803401450
-    SubobjectId: 11243231236212768689
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 6187531445871615436
+    SubobjectId: 751404130800371565
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 6205451705700689639
+  Id: 14337953318785422239
   Name: "Cone - Truncated Concave"
   Transform {
     Location {
@@ -992,7 +854,7 @@ Objects {
       Z: 4.949
     }
   }
-  ParentId: 6835788897398162378
+  ParentId: 12770937065230450884
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -1039,14 +901,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6205451705700689639
-    SubobjectId: 16491625587458250172
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 14337953318785422239
+    SubobjectId: 11045541606059149630
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 14194673360403597977
+  Id: 7278188430590366337
   Name: "Teeth"
   Transform {
     Location {
@@ -1062,7 +924,7 @@ Objects {
       Z: 0.697875738
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1077,14 +939,14 @@ Objects {
     FilePartitionName: "Teeth_3"
   }
   InstanceHistory {
-    SelfId: 14194673360403597977
-    SubobjectId: 8520154483116620226
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 7278188430590366337
+    SubobjectId: 4229531865831229472
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 12779735496995002926
+  Id: 6540687284476095273
   Name: "Nostrils"
   Transform {
     Location {
@@ -1101,7 +963,7 @@ Objects {
       Z: 1.70894766
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1145,14 +1007,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12779735496995002926
-    SubobjectId: 259672571090758005
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 6540687284476095273
+    SubobjectId: 393556357950615944
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 2288307011551521841
+  Id: 17633166591041851204
   Name: "Heart - Polished"
   Transform {
     Location {
@@ -1171,7 +1033,7 @@ Objects {
       Z: 9.21736908
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1213,14 +1075,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2288307011551521841
-    SubobjectId: 12466390863339118442
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 17633166591041851204
+    SubobjectId: 12323702998331512293
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 14463284797953186303
+  Id: 17872301842886001780
   Name: "Heart - Polished"
   Transform {
     Location {
@@ -1239,7 +1101,7 @@ Objects {
       Z: 9.16974545
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1281,14 +1143,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14463284797953186303
-    SubobjectId: 8824767797903895204
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 17872301842886001780
+    SubobjectId: 12084330806930382549
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 7433822187392153104
+  Id: 3890076220189930715
   Name: "Heart - Polished"
   Transform {
     Location {
@@ -1307,7 +1169,7 @@ Objects {
       Z: 8.51512
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1347,14 +1209,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7433822187392153104
-    SubobjectId: 15414144279949182283
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 3890076220189930715
+    SubobjectId: 7660432426195218042
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 7817989885319086907
+  Id: 3316429495747722511
   Name: "Heart - Polished"
   Transform {
     Location {
@@ -1373,7 +1235,7 @@ Objects {
       Z: 8.51512
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1413,14 +1275,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7817989885319086907
-    SubobjectId: 16050586130144964704
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 3316429495747722511
+    SubobjectId: 8193545310174783406
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 2347048296897924601
+  Id: 15170766204849562938
   Name: "Heart - Polished"
   Transform {
     Location {
@@ -1439,7 +1301,7 @@ Objects {
       Z: 9.67698669
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1481,14 +1343,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2347048296897924601
-    SubobjectId: 10543582685267885730
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 15170766204849562938
+    SubobjectId: 10176554603218059163
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 11310152713692451339
+  Id: 2126539768124054746
   Name: "Teardrop - Truncated"
   Transform {
     Location {
@@ -1506,7 +1368,7 @@ Objects {
       Z: 4
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1552,14 +1414,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11310152713692451339
-    SubobjectId: 3329722060470460752
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 2126539768124054746
+    SubobjectId: 4769872364255315579
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 12030340075915868327
+  Id: 7927314947249533331
   Name: "Teardrop - Truncated"
   Transform {
     Location {
@@ -1577,7 +1439,7 @@ Objects {
       Z: 7.49999952
     }
   }
-  ParentId: 11018503419592327421
+  ParentId: 3861016035604983001
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1623,9 +1485,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12030340075915868327
-    SubobjectId: 1455909413621386236
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 7927314947249533331
+    SubobjectId: 3580497991088302898
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }

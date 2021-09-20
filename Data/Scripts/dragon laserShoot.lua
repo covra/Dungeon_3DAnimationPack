@@ -1,7 +1,14 @@
- -- Custom 
+--custom 
+local ROOT = script.parent
 local MODEL_BODY = script:GetCustomProperty("dragon_model"):WaitForObject()
+local GEO_SPINE = script:GetCustomProperty("spine"):WaitForObject()
+local LASER_BEAM = script:GetCustomProperty("laserBeam"):WaitForObject()
+local REF_POS_LASER = script:GetCustomProperty("refPos"):WaitForObject()
+local ID_CREATURE = ROOT:GetCustomProperty("creatureID")
+--curves
 local CURV_BODY_IMPULSE_Z = script:GetCustomProperty("bodyImpulse")
 local CURV_WINGS = script:GetCustomProperty("wings")
+--sockets
 local SK_CLV_LEFT = script:GetCustomProperty("sk_clavicula_left"):WaitForObject()
 local SK_CODO_LEFT = script:GetCustomProperty("sk_codo_left"):WaitForObject()
 local SK_CLV_RIGHT = script:GetCustomProperty("sk_clavicula_right"):WaitForObject()
@@ -10,78 +17,76 @@ local SK_PELVIS = script:GetCustomProperty("pelvis"):WaitForObject()
 local SK_TAIL_1 = script:GetCustomProperty("sk_tail_1"):WaitForObject()
 local SK_TAIL_2 = script:GetCustomProperty("sk_tail_2"):WaitForObject()
 local SK_TAIL_3 = script:GetCustomProperty("sk_tail_3"):WaitForObject()
+local SK_TAIL_4 = script:GetCustomProperty("sk_tail_4"):WaitForObject()
 local SK_NECK = script:GetCustomProperty("sk_neck"):WaitForObject()
-local GEO_SPINE = script:GetCustomProperty("spine"):WaitForObject()
- -- Custom 
-local MOV_SCRIPT = script:GetCustomProperty("movement1"):WaitForObject()
-local LASER_BEAM = script:GetCustomProperty("laserBeam"):WaitForObject()
-local REF_POS_LASER = script:GetCustomProperty("refPos"):WaitForObject()
 --assets
-local CORCH_VFX = script:GetCustomProperty("CorchVFXLaser")
+local CORCH_VFX = ROOT:GetCustomProperty("CorchVFXLaser")
+local PRE_VFX = ROOT:GetCustomProperty("VFX_preLaser")
+--user exposed
+local OFFSET_TIMING_LASER = ROOT:GetCustomProperty("ToffsetLaser")
+
 
 
 
 -----------------------------------------------------------
 
-function OnBindingPressed(whichPlayer, binding)
-	--print("player " .. whichPlayer.name .. " pressed binding: " .. binding)
-	if (binding == "ability_primary") then 
-		--CURVE.postExtrapolation = CurveExtrapolation.CYCLE_WITH_OFFSET
-		
+function onAskRay(creatureID)
+	if creatureID == ID_CREATURE then 
+		--WINGS STOP
+		------------
+		Events.Broadcast("DRG.hold",ID_CREATURE)
 		--SPIN HEAD
 		-----------
+		Task.Wait(0.1 + OFFSET_TIMING_LASER)
 		SK_NECK.clientUserData.isAllowed = false
+		local preLaser = World.SpawnAsset(PRE_VFX,{parent = REF_POS_LASER })
+		preLaser:ScaleTo(Vector3.ONE * 4, 2,true)		
+		Task.Wait(2)
+		preLaser:ScaleTo(Vector3.ONE, 0,true)
+		Task.Wait(0.2)
 		LASER_BEAM.visibility = Visibility.FORCE_ON
 		LASER_BEAM:SetSmartProperty("Beam Length", 0.01)
 		Task.Wait(1)
 		local origSpinR = 20
 		SK_NECK:SetRotation(Rotation.New(0,0,-origSpinR) )
 		local origSpin = SK_NECK:GetRotation()
+		Task.Spawn(function() preLaser:Destroy() end, 2)
+		--SPAWN RAY 
+		------------
 		Task.Spawn(function()
 			local isRay  =  true
 			local spinTo = Rotation.New(0,0,0)
 			spinTo.z = origSpin.z + origSpinR * 2
-			SK_NECK:RotateTo(spinTo,3, true)
+			SK_NECK:RotateTo(spinTo,5, true)
 			for i = 0,0.5,0.01 do 
 				LASER_BEAM:SetSmartProperty("Beam Length", i)
 				Task.Wait()
 			end 
 			Task.Spawn(function() isRay = false end,3)
+			
 			while isRay do 
 				vZero = REF_POS_LASER:GetWorldPosition()
 				Vfinal = REF_POS_LASER:GetWorldPosition() + ((REF_POS_LASER:GetWorldRotation() * Rotation.New(-20,70,35)  * Vector3.ONE):GetNormalized() * 10000)						
 				local hr = World.Raycast(vZero,Vfinal)
-				--local params = {duration = 0.1, thickness = 16, color = Color.CYAN}
-				--CoreDebug.DrawLine(vZero, Vfinal,params)
 				if hr then 
 					local impPos = hr:GetImpactPosition()
 					World.SpawnAsset(CORCH_VFX,{position = impPos})
 				end 
 				Task.Wait()
 			end	
+			
+			--SWITCH OFF
+			-------------
 			for i = 1,0,-0.01 do 
 				LASER_BEAM:SetSmartProperty("Beam Length", i)
 				Task.Wait()
-			end 
-			print("fin animacion")
+			end 			
 			LASER_BEAM:SetSmartProperty("Beam Length", 0)
 			Task.Wait(0.5)
-			LASER_BEAM.visibility = Visibility.FORCE_ON
+			LASER_BEAM.visibility = Visibility.FORCE_OFF
 		end)
+		Events.Broadcast("DRG.fly",ID_CREATURE)
 	end
 end
 
-function OnBindingReleased(whichPlayer, binding)
-	--print("player " .. whichPlayer.name .. " released binding: " .. binding)
-	if (binding == "ability_primary") then 
-		
-	end
-end
-
-function OnPlayerJoined(player)
-	player.bindingPressedEvent:Connect(OnBindingPressed)
-	player.bindingReleasedEvent:Connect(OnBindingReleased)
-end
-
--- on player joined/left functions need to be defined before calling event:Connect()
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+Events.Connect("DRG.ray",onAskRay)

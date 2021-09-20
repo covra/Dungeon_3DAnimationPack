@@ -106,12 +106,3 @@ Assets {
     AssetId: "mi_basic_emissive_001"
   }
 }
-Assets {
-  Id: 3685332661897534213
-  Name: "Scorch Mark Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_scorchmark"
-  }
-}

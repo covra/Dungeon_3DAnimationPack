@@ -413,6 +413,9 @@ Objects {
   Name: "Spawn Settings"
   Transform {
     Location {
+      X: -6140.8457
+      Y: 3095.3457
+      Z: 1630.59656
     }
     Rotation {
     }

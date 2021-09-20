@@ -1,7 +1,7 @@
 Name: "right_2"
-RootId: 10650296995745507474
+RootId: 6516353324470501259
 Objects {
-  Id: 1006590936124478272
+  Id: 7404939412115456234
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 0.51780051
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -63,14 +63,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1006590936124478272
-    SubobjectId: 13778787752474796059
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 7404939412115456234
+    SubobjectId: 4138984167499897419
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 8336055841522191153
+  Id: 9297700017678416332
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -89,7 +89,7 @@ Objects {
       Z: 0.51780051
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -132,14 +132,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8336055841522191153
-    SubobjectId: 13938546244651628650
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 9297700017678416332
+    SubobjectId: 16049441376026223469
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 12057605069656917429
+  Id: 7163678231328508377
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -157,7 +157,7 @@ Objects {
       Z: 0.681548893
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -200,14 +200,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12057605069656917429
-    SubobjectId: 1555149830086014702
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 7163678231328508377
+    SubobjectId: 4384674696410059640
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 7972433256690433043
+  Id: 8923756348093772335
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -226,7 +226,7 @@ Objects {
       Z: 0.681549
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -269,14 +269,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7972433256690433043
-    SubobjectId: 15880803497304362824
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 8923756348093772335
+    SubobjectId: 2622374935307659406
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 8316656507602717058
+  Id: 18176144989723445648
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -295,7 +295,7 @@ Objects {
       Z: 0.681549
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -338,14 +338,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8316656507602717058
-    SubobjectId: 13955111999425313497
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 18176144989723445648
+    SubobjectId: 11785254553666245425
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 11009211030593391323
+  Id: 1469258270314250838
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -364,7 +364,7 @@ Objects {
       Z: 0.681549
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -407,14 +407,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11009211030593391323
-    SubobjectId: 3028851554641017216
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 1469258270314250838
+    SubobjectId: 5463107821895702775
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 10187445369119148043
+  Id: 2594092461162005061
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -433,7 +433,7 @@ Objects {
       Z: 0.681549
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -476,14 +476,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10187445369119148043
-    SubobjectId: 4584986564066229072
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 2594092461162005061
+    SubobjectId: 8913486071308097764
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 8180386044445879626
+  Id: 13542928541011987369
   Name: "Cone - Bullet"
   Transform {
     Location {
@@ -502,7 +502,7 @@ Objects {
       Z: 0.681549
     }
   }
-  ParentId: 10650296995745507474
+  ParentId: 6516353324470501259
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -545,9 +545,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8180386044445879626
-    SubobjectId: 14071117354986823185
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 13542928541011987369
+    SubobjectId: 16447467735835103496
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }

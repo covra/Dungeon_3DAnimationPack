@@ -1,7 +1,7 @@
 Name: "Teeth_3"
-RootId: 14194673360403597977
+RootId: 7278188430590366337
 Objects {
-  Id: 15926725051471296622
+  Id: 6312884835288295085
   Name: "left"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14194673360403597977
+  ParentId: 7278188430590366337
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -32,14 +32,14 @@ Objects {
     FilePartitionName: "left_3"
   }
   InstanceHistory {
-    SelfId: 15926725051471296622
-    SubobjectId: 8054458580827523893
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 6312884835288295085
+    SubobjectId: 587964176952835084
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
 Objects {
-  Id: 6303293956017664560
+  Id: 6718921146460115891
   Name: "right"
   Transform {
     Location {
@@ -55,7 +55,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14194673360403597977
+  ParentId: 7278188430590366337
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -70,9 +70,9 @@ Objects {
     FilePartitionName: "right_3"
   }
   InstanceHistory {
-    SelfId: 6303293956017664560
-    SubobjectId: 16553538012908880235
-    InstanceId: 11533915852118177642
-    TemplateId: 9224884056888649602
+    SelfId: 6718921146460115891
+    SubobjectId: 183915505134799122
+    InstanceId: 4657454982540493058
+    TemplateId: 7151256917161537769
   }
 }
