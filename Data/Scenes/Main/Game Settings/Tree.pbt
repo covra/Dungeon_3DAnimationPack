@@ -232,17 +232,17 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 640
+      WalkSpeed: 1500
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
       JumpMaxCount: 1
-      JumpVelocity: 900
+      JumpVelocity: 2000
       GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1
-      BrakingDecelerationFlying: 600
+      BrakingDecelerationFlying: 2000
       MaxFlightSpeed: 600
       MovementControlMode {
         Value: "mc:emovementcontrolmode:lookrelative"
@@ -289,12 +289,14 @@ Objects {
   Name: "Spawn Point 0"
   Transform {
     Location {
-      X: 1484.00269
-      Y: 1400.22559
-      Z: 605.888306
+      X: 3389.08398
+      Y: 456.103668
+      Z: 484.410156
     }
     Rotation {
-      Yaw: 66.6527176
+      Pitch: 1.07089841
+      Yaw: 177.963531
+      Roll: 2.48140621
     }
     Scale {
       X: 1
@@ -413,9 +415,9 @@ Objects {
   Name: "Spawn Settings"
   Transform {
     Location {
-      X: -6140.8457
-      Y: 3095.3457
-      Z: 1630.59656
+      X: 4035.01343
+      Y: -1677.51685
+      Z: 393.532104
     }
     Rotation {
     }

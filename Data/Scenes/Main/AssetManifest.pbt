@@ -1,4 +1,22 @@
 Assets {
+  Id: 18078697585436542900
+  Name: "Bamboo Shoot 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_jpn_bamboo_shoot_001_uv_ref"
+  }
+}
+Assets {
+  Id: 14707836701493057554
+  Name: "Artificial Grass 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_artificial_001_uv_ref"
+  }
+}
+Assets {
   Id: 13057252338196386360
   Name: "Basic Apple"
   PlatformAssetType: 1
@@ -14,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 8650688309787480650
+  Name: "Capsule"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_capsule_001"
   }
 }
 Assets {

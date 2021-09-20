@@ -1,6 +1,62 @@
 Name: "ArtGeo"
 RootId: 7206580402809662692
 Objects {
+  Id: 9609883313091400918
+  Name: "floor"
+  Transform {
+    Location {
+      X: -13604.2363
+      Y: 5396.60791
+      Z: 2009.4751
+    }
+    Rotation {
+      Yaw: -49.5639381
+    }
+    Scale {
+      X: 30.2940121
+      Y: 34.4712563
+      Z: 1
+    }
+  }
+  ParentId: 7206580402809662692
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3089624459064127353
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 755238315703424467
   Name: "rock"
   Transform {

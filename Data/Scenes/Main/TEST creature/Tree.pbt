@@ -5,6 +5,7 @@ Objects {
   Name: "path"
   Transform {
     Location {
+      Z: 3033.74561
     }
     Rotation {
     }
@@ -46,7 +47,6 @@ Objects {
     Location {
       X: 239.847412
       Y: -2511.72876
-      Z: 1000
     }
     Rotation {
     }
@@ -101,7 +101,6 @@ Objects {
     Location {
       X: 5483.18945
       Y: -11409.2793
-      Z: 1000
     }
     Rotation {
     }
@@ -156,7 +155,6 @@ Objects {
     Location {
       X: -648.353516
       Y: -15821.335
-      Z: 1000
     }
     Rotation {
     }
@@ -211,7 +209,6 @@ Objects {
     Location {
       X: -9767.99219
       Y: -15821.335
-      Z: 1000
     }
     Rotation {
     }
@@ -266,7 +263,6 @@ Objects {
     Location {
       X: -9767.99219
       Y: -15821.335
-      Z: 1000
     }
     Rotation {
     }
@@ -321,7 +317,6 @@ Objects {
     Location {
       X: -14341.6416
       Y: -6420.58203
-      Z: 1000
     }
     Rotation {
     }
@@ -375,7 +370,6 @@ Objects {
   Transform {
     Location {
       X: -10311.6865
-      Z: 1000
     }
     Rotation {
     }
@@ -429,7 +423,6 @@ Objects {
   Transform {
     Location {
       X: -4147.7085
-      Z: 1000
     }
     Rotation {
     }

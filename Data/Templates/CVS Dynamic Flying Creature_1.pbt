@@ -145,9 +145,10 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 180
           }
           Scale {
-            X: 3.6250031
+            X: 3.625
             Y: 3.6250031
             Z: 3.6250031
           }
