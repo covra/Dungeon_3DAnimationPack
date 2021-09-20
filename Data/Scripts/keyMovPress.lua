@@ -14,6 +14,10 @@ local SK_NECK = script:GetCustomProperty("sk_neck"):WaitForObject()
 local GEO_SPINE = script:GetCustomProperty("spine"):WaitForObject()
  -- Custom 
 local MOV_SCRIPT = script:GetCustomProperty("movement1"):WaitForObject()
+local LASER_BEAM = script:GetCustomProperty("laserBeam"):WaitForObject()
+local REF_POS_LASER = script:GetCustomProperty("refPos"):WaitForObject()
+--assets
+local CORCH_VFX = script:GetCustomProperty("CorchVFXLaser")
 
 
 
@@ -27,6 +31,8 @@ function OnBindingPressed(whichPlayer, binding)
 		--SPIN HEAD
 		-----------
 		SK_NECK.clientUserData.isAllowed = false
+		LASER_BEAM.visibility = Visibility.FORCE_ON
+		LASER_BEAM:SetSmartProperty("Beam Length", 0.01)
 		Task.Wait(1)
 		local origSpinR = 20
 		SK_NECK:SetRotation(Rotation.New(0,0,-origSpinR) )
@@ -35,12 +41,33 @@ function OnBindingPressed(whichPlayer, binding)
 			local isRay  =  true
 			local spinTo = Rotation.New(0,0,0)
 			spinTo.z = origSpin.z + origSpinR * 2
-			SK_NECK:RotateTo(spinTo,5, true)
+			SK_NECK:RotateTo(spinTo,3, true)
+			for i = 0,0.5,0.01 do 
+				LASER_BEAM:SetSmartProperty("Beam Length", i)
+				Task.Wait()
+			end 
+			Task.Spawn(function() isRay = false end,3)
 			while isRay do 
-				
-			end
+				vZero = REF_POS_LASER:GetWorldPosition()
+				Vfinal = REF_POS_LASER:GetWorldPosition() + ((REF_POS_LASER:GetWorldRotation() * Rotation.New(-20,70,35)  * Vector3.ONE):GetNormalized() * 10000)						
+				local hr = World.Raycast(vZero,Vfinal)
+				--local params = {duration = 0.1, thickness = 16, color = Color.CYAN}
+				--CoreDebug.DrawLine(vZero, Vfinal,params)
+				if hr then 
+					local impPos = hr:GetImpactPosition()
+					World.SpawnAsset(CORCH_VFX,{position = impPos})
+				end 
+				Task.Wait()
+			end	
+			for i = 1,0,-0.01 do 
+				LASER_BEAM:SetSmartProperty("Beam Length", i)
+				Task.Wait()
+			end 
+			print("fin animacion")
+			LASER_BEAM:SetSmartProperty("Beam Length", 0)
+			Task.Wait(0.5)
+			LASER_BEAM.visibility = Visibility.FORCE_ON
 		end)
-		
 	end
 end
 

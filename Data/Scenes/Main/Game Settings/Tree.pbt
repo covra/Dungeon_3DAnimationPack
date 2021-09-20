@@ -1,6 +1,46 @@
 Name: "Game Settings"
 RootId: 6630354753093998738
 Objects {
+  Id: 9975459776202426250
+  Name: "CVS_playerFlyKeyBinding"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6630354753093998738
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6789431170638914759
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CVS_playerFlyKeyBinding"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4945813157121295208
+    }
+  }
+}
+Objects {
   Id: 14713340454944924967
   Name: "Third Person Camera Settings"
   Transform {
@@ -249,11 +289,12 @@ Objects {
   Name: "Spawn Point 0"
   Transform {
     Location {
-      X: 446.035767
-      Y: 1365.57166
-      Z: 115
+      X: 1484.00269
+      Y: 1400.22559
+      Z: 605.888306
     }
     Rotation {
+      Yaw: 66.6527176
     }
     Scale {
       X: 1

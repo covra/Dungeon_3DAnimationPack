@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15124633698047936469
+  Name: "Asphalt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_asphault_001"
+  }
+}
+Assets {
   Id: 13109277466693115659
   Name: "Axis Helper"
   PlatformAssetType: 1
@@ -68,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_horn_001"
+  }
+}
+Assets {
+  Id: 7806828271909265236
+  Name: "Sci-fi Panel 2x3m Triangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_panel_2x3m_triangle_001"
   }
 }
 Assets {
