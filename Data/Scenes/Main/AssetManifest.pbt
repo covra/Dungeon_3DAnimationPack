@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13109277466693115659
+  Name: "Axis Helper"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_axis_helper_01_ref"
+  }
+}
+Assets {
   Id: 13057252338196386360
   Name: "Basic Apple"
   PlatformAssetType: 1
