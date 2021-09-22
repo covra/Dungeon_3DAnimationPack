@@ -2,7 +2,7 @@ Assets {
   Id: 1548476112656099258
   Name: "Custom Dragon Scales 01"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 9773853523626812835
     ParameterOverrides {

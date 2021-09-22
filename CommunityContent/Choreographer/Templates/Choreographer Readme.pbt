@@ -40,6 +40,6 @@ Assets {
   Marketplace {
     Description: "This is a library for scripting basic animations on animated and static meshes!\r\n\r\nIt is designed to remove as much complexity as possible, (you don\'t even have to write scripts!) and let you focus on the fun part: Making things move and bring your world alive!\r\n\r\nUpdate!\r\nFixed a bug where it stopped working\r\n"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

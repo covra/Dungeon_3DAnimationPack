@@ -16,7 +16,7 @@ function spawnNewMov (sk, index)
 		--posSk.z = posSk.z + 2
 		sk:SetPosition(posSknew)
 		Task.Wait()
-		print(posSknew.y)
+		--print(posSknew.y)
 	end
 end 
 

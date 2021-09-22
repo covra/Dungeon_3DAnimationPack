@@ -2,7 +2,7 @@ Assets {
   Id: 588516550042680415
   Name: "CVS Dragon MT basic"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 12787682159672013637
     ParameterOverrides {

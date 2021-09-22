@@ -9945,6 +9945,6 @@ Assets {
   Marketplace {
     Description: "A black and blue dragon inspired by a Charizard :3\r\n(He\'s huge, so he\'s gonna need to feed on a lot of things!)"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

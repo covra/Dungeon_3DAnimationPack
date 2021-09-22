@@ -39,5 +39,5 @@ Assets {
     OwnerName: "covra"
     Description: "Para viajar entre puntos predefinidos\r\n\r\nTo travel to pre-defined points"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11779094047168520272
+  Name: "Basic Pepper 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_org_pepper_001_ref"
+  }
+}
+Assets {
   Id: 8650688309787480650
   Name: "Capsule"
   PlatformAssetType: 1

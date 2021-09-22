@@ -42,6 +42,6 @@ Assets {
   Marketplace {
     Description: "Sencillo script utilizado en varios juegos para, con una tecla,  hacer volar al jugador  y, presionandola de nuevo , hacer que camine\r\n\r\n- la velocidad de vuelo solo se puede configurar en el propio editor\r\n- las demas velocidades (andar, nadar..) se pueden poner aqui\r\n\r\n\r\nby CoVrA en espa\303\221ol ; )"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }
