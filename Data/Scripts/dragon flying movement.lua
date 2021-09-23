@@ -18,10 +18,15 @@ local SK_TAIL_3 = script:GetCustomProperty("sk_tail_3"):WaitForObject()
 local SK_TAIL_4 = script:GetCustomProperty("sk_tail_4"):WaitForObject()
 local SK_NECK = script:GetCustomProperty("sk_neck"):WaitForObject()
 --mods
-local powerBody = 15
-local powerWingRot = 20		--first wing socket
-local powerWing2Rot = 30  --second wing socket
-local FLAP_TIME = 3
+local powerBody = script:GetCustomProperty("powerBody") or 15
+local powerWingRot = script:GetCustomProperty("powerWingRot") or 20  --first wing socket
+local powerWing2Rot = script:GetCustomProperty("powerWingRot_2") or 30  --second wing socket
+local FLAP_TIME = script:GetCustomProperty("flapTime") or 3
+
+--local powerBody = 15
+--local powerWingRot = 20		
+--local powerWing2Rot = 30  
+--local FLAP_TIME = 3
 --user exposed
 local OFFSET_TIMING_BODY = ROOT:GetCustomProperty("ToffsetPosBody")
 local OFFSET_BODY = ROOT:GetCustomProperty("offsetBody")

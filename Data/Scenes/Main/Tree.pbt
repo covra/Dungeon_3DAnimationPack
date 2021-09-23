@@ -21,8 +21,7 @@ Objects {
   ChildIds: 7264516668055820329
   ChildIds: 1258558155938957142
   ChildIds: 2936925158032508213
-  ChildIds: 10792184099930943596
-  ChildIds: 4657454982540493058
+  ChildIds: 8667880079938157860
   ChildIds: 11622007646058615065
   ChildIds: 8829948957600489938
   ChildIds: 16309587397946168320
@@ -60,6 +59,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1360009724146520776
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 555.11615
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 9601285917350483294
       value {
         Overrides {
@@ -72,6 +82,50 @@ Objects {
             X: 3787.34863
             Y: -3487.17
             Z: 1019.99023
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11054871734741288824
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 944.459106
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15486264253082876180
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 821.657654
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17090880956119092634
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 688.041931
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17536973404195669754
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -263.589813
           }
         }
       }
@@ -2399,8 +2453,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4657454982540493058
-  Name: "CVS Dynamic Flying Creature"
+  Id: 8667880079938157860
+  Name: "3DG Flying creature with FireRay"
   Transform {
     Scale {
       X: 1
@@ -2409,7 +2463,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2418,60 +2471,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5150323845410929512
+      key: 8903893269846890694
       value {
         Overrides {
           Name: "Name"
-          String: "CVS Dynamic Flying Creature"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 931.886292
-          }
+          String: "3DG Flying creature with FireRay"
         }
       }
     }
     TemplateAsset {
-      Id: 7151256917161537769
+      Id: 5574186351174728677
     }
-  }
-}
-Objects {
-  Id: 10792184099930943596
-  Name: "TEST creature"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "TEST creature"
   }
 }
 Objects {
