@@ -41,20 +41,20 @@ function init()
 			end
 			Task.Wait(0.1)
 		end)
-		--[[
-		--for _,sk in pairs (SNAKE_2:FindDescendantsByName("sk")) do 
+]]
+		for _,sk in pairs (SNAKE_2:FindDescendantsByName("sk")) do 
 			index = index + 1
 			local wC = CURVE_SNAKE:GetValue(time() )--+ (dt * index) )
 			--posSk = V3Table[index - 1] or sk:GetPosition()
 			posSk = SK1:GetPosition()
-			posSk.y = posSk.y + wC/10--(wC *10)
+			posSk.y = (posSk.y + wC)/100--(wC *10)
 			--posSk.z = posSk.z + 10
 			posSk.x = 0
 			SK1:SetPosition(posSk)
 			--V3Table[index] = posSk
 			Task.Wait()
-	--	end 
-	]]
+		end 
+	
 	
 	end
 end 

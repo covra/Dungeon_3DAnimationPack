@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16023896067923167911
+  Name: "Chain Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chain_001"
+  }
+}
+Assets {
   Id: 14707836701493057554
   Name: "Artificial Grass 01"
   PlatformAssetType: 2

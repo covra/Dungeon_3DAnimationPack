@@ -25,6 +25,7 @@ Objects {
   ChildIds: 11622007646058615065
   ChildIds: 8829948957600489938
   ChildIds: 16309587397946168320
+  ChildIds: 17767049693902647463
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,41 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17767049693902647463
+  Name: "Bugs"
+  Transform {
+    Location {
+      X: -1798.15283
+      Y: -2551.55273
+      Z: 102.537292
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Bugs"
   }
 }
 Objects {
@@ -187,7 +223,6 @@ Objects {
     }
   }
   ParentId: 8829948957600489938
-  ChildIds: 11900916384195058235
   ChildIds: 17424654984184748675
   ChildIds: 3457543473730464526
   WantsNetworking: true
@@ -1417,99 +1452,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11900916384195058235
-  Name: "grounded_Movement"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1378491011372363092
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:head"
-      ObjectReference {
-        SelfId: 14442214009770030117
-      }
-    }
-    Overrides {
-      Name: "cs:skFolder"
-      ObjectReference {
-        SelfId: 8723707428283224497
-      }
-    }
-    Overrides {
-      Name: "cs:snake_mov"
-      SimpleCurve {
-        Keys {
-          Interpolation {
-            Value: "mc:erichcurveinterpmode:rcim_cubic"
-          }
-          TangentMode {
-            Value: "mc:erichcurvetangentmode:rctm_auto"
-          }
-          Value: 1
-        }
-        Keys {
-          Interpolation {
-            Value: "mc:erichcurveinterpmode:rcim_cubic"
-          }
-          TangentMode {
-            Value: "mc:erichcurvetangentmode:rctm_auto"
-          }
-          Time: 4
-          Value: -1
-        }
-        Keys {
-          Interpolation {
-            Value: "mc:erichcurveinterpmode:rcim_cubic"
-          }
-          TangentMode {
-            Value: "mc:erichcurvetangentmode:rctm_auto"
-          }
-          Time: 8
-          Value: 1
-        }
-        PreExtrapolation {
-          Value: "mc:erichcurveextrapolation:rcce_oscillate"
-        }
-        PostExtrapolation {
-          Value: "mc:erichcurveextrapolation:rcce_oscillate"
-        }
-      }
-    }
-    Overrides {
-      Name: "cs:sk"
-      ObjectReference {
-        SelfId: 8723707428283224497
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3759010104170193803
-    }
-  }
-}
-Objects {
   Id: 11622007646058615065
   Name: "CVS Dynamic Ground Creature"
   Transform {
@@ -1638,12 +1580,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14707836701493057554
-      }
-    }
-    Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: false
     }
@@ -1662,7 +1598,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1764,7 +1700,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1822,7 +1758,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1880,7 +1816,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1938,7 +1874,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1996,7 +1932,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2054,7 +1990,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2112,7 +2048,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2170,7 +2106,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2228,7 +2164,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2285,7 +2221,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 16023896067923167911
     }
     Teams {
       IsTeamCollisionEnabled: true

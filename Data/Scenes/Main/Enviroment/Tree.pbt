@@ -75,7 +75,6 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      Z: -50
     }
     Rotation {
     }
