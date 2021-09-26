@@ -3,7 +3,7 @@
 	README CONTENT:
 	==============
 	
-	 - Drag&Drop the object to the scene. This animation simultate a flying creature moving its wings. Also has
+	 - Drag&Drop the object to the scene. This animation simulate a flying creature moving its wings. Also has
 	 built-in a fire ray that is shooted from its mouth.
 	 
 	 - The structure is mainly a client side animation, but with a component networked to be able to be moved in runtime

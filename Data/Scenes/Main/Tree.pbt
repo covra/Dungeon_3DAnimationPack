@@ -26,6 +26,7 @@ Objects {
   ChildIds: 8829948957600489938
   ChildIds: 16309587397946168320
   ChildIds: 17767049693902647463
+  ChildIds: 11143835829116106849
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +39,52 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 11143835829116106849
+  Name: "3DG moving interactive rope"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10467963888235466787
+      value {
+        Overrides {
+          Name: "Name"
+          String: "3DG moving interactive rope"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1300.11328
+            Y: -2475.29224
+            Z: 1768.92322
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 90.9739456
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11152352859693366301
+    }
   }
 }
 Objects {
