@@ -10,6 +10,10 @@ local VFX_SPARKS2 = SPHERE:FindDescendantByName("VFX_sparksExplosion2")
 local VFX_SPARKS0 = CLIENT_FOLDER:FindDescendantByName("VFXimpactSparks")
 local SFX_SPARKS = SPHERE:FindDescendantByName("SFX_explosion")
 local localPlayer = Game.GetLocalPlayer()
+local FX_GET = CLIENT_FOLDER:GetCustomProperty("getAbilityFx")
+local AMBIENT_SFX = CLIENT_FOLDER:GetCustomProperty("sfx"):WaitForObject()
+local SPARK_XP = CLIENT_FOLDER:GetCustomProperty("spark_sfx"):WaitForObject()
+local ABSORB_SFX = CLIENT_FOLDER:GetCustomProperty("absorb_sfx"):WaitForObject()
 
 local aaprop = PARTS:FindDescendantByName("aa")
 local abprop = PARTS:FindDescendantByName("ab")
@@ -22,8 +26,13 @@ function doStuffs ()
 	Task.Wait()
 	
 	local listofPieces = PARTS:FindDescendantsByType("StaticMesh")
+	for _,sf in pairs (AMBIENT_SFX:GetChildren()) do 
+		sf:Stop()
+	end 
 	VFX_SPARKS:Play()
+	SPARK_XP:Play()
 	VFX_SPARKS2:Play()
+	ABSORB_SFX:Play()
 	SPHERE:ScaleTo(Vector3.ZERO,4, true)
 	ENERGY__EFFECT:Play()
 	for _,obj in pairs (listofPieces) do 
@@ -94,7 +103,8 @@ function doStuffs ()
 		obj:MoveTo(localPos, 0.2, true)
 	end
 
-
+	ABSORB_SFX:Stop()
+	
 	for _,obj in pairs (listofPieces) do 
 		obj.visibility = Visibility.FORCE_OFF
 	end
@@ -102,16 +112,18 @@ function doStuffs ()
 	
 	SFX_SPARKS:Play()
 	VFX_SPARKS0:Play()
-	Events.Broadcast("Camera Shake")
+	Events.Broadcast("CameraShake",3, localPlayer)
 	Task.Wait(0.4)
 	CUBO_FINAL.collision = Collision.FORCE_ON
 	CUBO_FINAL.isSimulatingDebrisPhysics = true
+	World.SpawnAsset(FX_GET,{position = localPlayer:GetWorldPosition()})
+	CUBO_FINAL.lifeSpan = 5
 end
 
 function checkCube (nameIn)
-	if nameIn == CLIENT_FOLDER:GetCustomProperty("nameAbility") then
+	--if nameIn == CLIENT_FOLDER:GetCustomProperty("nameAbility") then
 		doStuffs()
-	end	
+	--end	
 end
 
 

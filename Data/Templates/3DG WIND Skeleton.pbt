@@ -4164,192 +4164,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14231809728886464860
-      Name: "Wood Raw White"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_white_001_uv"
-      }
-    }
-    Assets {
-      Id: 3772841693544590820
-      Name: "Ring - Thick"
+      Id: 1137112816547272582
+      Name: "Cylinder"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torus_005"
-      }
-    }
-    Assets {
-      Id: 10119402015829572707
-      Name: "Bone Human Foot 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_foot_01_ref"
-      }
-    }
-    Assets {
-      Id: 6441689386859181374
-      Name: "Bone Human Tibula 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_tib_01_ref"
-      }
-    }
-    Assets {
-      Id: 10461114536680642987
-      Name: "Bone Human Jaw 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_jaw_01_ref"
-      }
-    }
-    Assets {
-      Id: 17031410647890337386
-      Name: "Emissive Glow Transparent"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_emissive_001"
-      }
-    }
-    Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 11586364191422610007
-      Name: "Bone Human Skull 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_skull_01_ref"
-      }
-    }
-    Assets {
-      Id: 6814662238097951527
-      Name: "Bone Human Scapula 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_scap_01_ref"
-      }
-    }
-    Assets {
-      Id: 16527377860732878057
-      Name: "Bone Human Ulna 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_ulna_01_ref"
-      }
-    }
-    Assets {
-      Id: 14367130943044040382
-      Name: "Bone Human Humerus 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_humerus_01_ref"
-      }
-    }
-    Assets {
-      Id: 13676027037834941548
-      Name: "Bone Human Spine 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_spine_01_ref"
-      }
-    }
-    Assets {
-      Id: 17855001797903379816
-      Name: "Bone Human Femur 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_femur_01_ref"
-      }
-    }
-    Assets {
-      Id: 4022336196992994015
-      Name: "Bone Human Hand 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_hand_01_ref"
-      }
-    }
-    Assets {
-      Id: 2670572668645393295
-      Name: "Bone Human Ribcage 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_bones_human_ribcage_01_ref"
-      }
-    }
-    Assets {
-      Id: 14367570025647046383
-      Name: "Trim - Curve 90\302\260 - 12m Radius"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_trimitives_001_curve90_12m_ref"
-      }
-    }
-    Assets {
-      Id: 198353679974341757
-      Name: "Cube - Bottom-Aligned"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
-      }
-    }
-    Assets {
-      Id: 5113278490719783875
-      Name: "Chain Ceiling Anchor"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_chain_top_001"
-      }
-    }
-    Assets {
-      Id: 5939139837395840165
-      Name: "Pipe - 6-Sided Thin"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_pipe_sixsided_001"
-      }
-    }
-    Assets {
-      Id: 3527944501191753434
-      Name: "Pipe - 6-Sided Thick - Rounded"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_pipe_sixsided_thick_001_ref"
-      }
-    }
-    Assets {
-      Id: 4289160600405295316
-      Name: "Metal Basic 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_basic_001"
+        AssetId: "sm_cylinder_002"
       }
     }
     Assets {
@@ -4362,20 +4182,192 @@ Assets {
       }
     }
     Assets {
-      Id: 1137112816547272582
-      Name: "Cylinder"
-      PlatformAssetType: 1
+      Id: 4289160600405295316
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_002"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
       }
     }
     Assets {
-      Id: 12566968694328888796
-      Name: "3DG WIND skeleton client"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: " -- Custom \r\nlocal CLIENT_FOLDER = script.parent\r\nlocal SK_CELL = script:GetCustomProperty(\"sk_cell\"):WaitForObject()\r\nlocal SK_COLG = script:GetCustomProperty(\"sk_colg\"):WaitForObject()\r\nlocal SK_COLG_ARM = script:GetCustomProperty(\"sk_colg_arm\"):WaitForObject()\r\nlocal CURVE_WIND = script:GetCustomProperty(\"windMov\")\r\n--user exposed\r\nlocal WIND_POWER = CLIENT_FOLDER:GetCustomProperty(\"windPower\")\r\nlocal OFFSET = CLIENT_FOLDER:GetCustomProperty(\"movOffset\") \r\n--local \r\nlocal skrot = SK_CELL:GetRotation()\r\nlocal skrot_colg = SK_COLG:GetRotation()\r\nlocal skrot_colg_arm = SK_COLG_ARM:GetRotation()\r\n\r\n\r\nfunction Tick ()\r\n\tlocal cr = CURVE_WIND:GetValue(time() + OFFSET)\r\n\tskrot.x = cr * WIND_POWER\r\n\tskrot.y = cr * WIND_POWER\r\n\tskrot_colg.x = cr * (WIND_POWER *5) \r\n\tSK_CELL:SetRotation(skrot)\r\n\tSK_COLG:SetRotation(skrot_colg)\r\n\tskrot_colg_arm.x = cr * (WIND_POWER *3) \r\n\tSK_COLG_ARM:SetRotation(skrot_colg_arm)\r\nend "
+      Id: 3527944501191753434
+      Name: "Pipe - 6-Sided Thick - Rounded"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_pipe_sixsided_thick_001_ref"
+      }
+    }
+    Assets {
+      Id: 5939139837395840165
+      Name: "Pipe - 6-Sided Thin"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_pipe_sixsided_001"
+      }
+    }
+    Assets {
+      Id: 5113278490719783875
+      Name: "Chain Ceiling Anchor"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_chain_top_001"
+      }
+    }
+    Assets {
+      Id: 198353679974341757
+      Name: "Cube - Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_001"
+      }
+    }
+    Assets {
+      Id: 14367570025647046383
+      Name: "Trim - Curve 90\302\260 - 12m Radius"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_trimitives_001_curve90_12m_ref"
+      }
+    }
+    Assets {
+      Id: 2670572668645393295
+      Name: "Bone Human Ribcage 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_ribcage_01_ref"
+      }
+    }
+    Assets {
+      Id: 4022336196992994015
+      Name: "Bone Human Hand 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_hand_01_ref"
+      }
+    }
+    Assets {
+      Id: 17855001797903379816
+      Name: "Bone Human Femur 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_femur_01_ref"
+      }
+    }
+    Assets {
+      Id: 13676027037834941548
+      Name: "Bone Human Spine 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_spine_01_ref"
+      }
+    }
+    Assets {
+      Id: 14367130943044040382
+      Name: "Bone Human Humerus 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_humerus_01_ref"
+      }
+    }
+    Assets {
+      Id: 16527377860732878057
+      Name: "Bone Human Ulna 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_ulna_01_ref"
+      }
+    }
+    Assets {
+      Id: 6814662238097951527
+      Name: "Bone Human Scapula 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_scap_01_ref"
+      }
+    }
+    Assets {
+      Id: 11586364191422610007
+      Name: "Bone Human Skull 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_skull_01_ref"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 17031410647890337386
+      Name: "Emissive Glow Transparent"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_emissive_001"
+      }
+    }
+    Assets {
+      Id: 10461114536680642987
+      Name: "Bone Human Jaw 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_jaw_01_ref"
+      }
+    }
+    Assets {
+      Id: 6441689386859181374
+      Name: "Bone Human Tibula 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_tib_01_ref"
+      }
+    }
+    Assets {
+      Id: 10119402015829572707
+      Name: "Bone Human Foot 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_bones_human_foot_01_ref"
+      }
+    }
+    Assets {
+      Id: 3772841693544590820
+      Name: "Ring - Thick"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_torus_005"
+      }
+    }
+    Assets {
+      Id: 14231809728886464860
+      Name: "Wood Raw White"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_white_001_uv"
       }
     }
     PrimaryAssetId {
@@ -4385,4 +4377,3 @@ Assets {
   }
   SerializationVersion: 100
 }
-IncludesAllDependencies: true

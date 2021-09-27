@@ -88,7 +88,6 @@ Objects {
   }
   ParentId: 14713340454944924967
   ChildIds: 3567959178173361743
-  ChildIds: 6689001325738096564
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -101,55 +100,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 6689001325738096564
-  Name: "1st"
-  Transform {
-    Location {
-      Z: 500
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 724324913679364851
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  Camera {
-    AttachToLocalPlayer: true
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 1200
-    UseCameraSocket: true
-    RotationMode {
-      Value: "mc:erotationmode:lookangle"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-    DoesPositionOffsetSpring: true
   }
 }
 Objects {
@@ -168,6 +118,7 @@ Objects {
     }
   }
   ParentId: 724324913679364851
+  ChildIds: 14018995332811074012
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -204,6 +155,42 @@ Objects {
   }
 }
 Objects {
+  Id: 14018995332811074012
+  Name: "cameraShake"
+  Transform {
+    Location {
+      X: 2612.96899
+      Y: 4950.34961
+      Z: -47.2393494
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.649225473
+      Y: 0.649225473
+      Z: 0.649225473
+    }
+  }
+  ParentId: 3567959178173361743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13375397790933482636
+    }
+  }
+}
+Objects {
   Id: 4226120016796708080
   Name: "Third Person Player Settings"
   Transform {
@@ -232,17 +219,17 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 1500
+      WalkSpeed: 640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
       JumpMaxCount: 1
-      JumpVelocity: 2000
+      JumpVelocity: 900
       GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1
-      BrakingDecelerationFlying: 2000
+      BrakingDecelerationFlying: 600
       MaxFlightSpeed: 600
       MovementControlMode {
         Value: "mc:emovementcontrolmode:lookrelative"
@@ -289,14 +276,14 @@ Objects {
   Name: "Spawn Point 0"
   Transform {
     Location {
-      X: 3389.08398
-      Y: 456.103668
-      Z: 484.410156
+      X: -30612.8574
+      Y: -23118.9609
+      Z: 672.022156
     }
     Rotation {
       Pitch: 1.07089841
       Yaw: 177.963531
-      Roll: 2.48140621
+      Roll: 2.48140693
     }
     Scale {
       X: 1

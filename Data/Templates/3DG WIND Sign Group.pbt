@@ -3674,84 +3674,12 @@ Assets {
       }
     }
     Assets {
-      Id: 12095835209017042614
-      Name: "Cube"
+      Id: 9392192798366320444
+      Name: "Cylinder - Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 11532960868733969370
-      Name: "Cylinder - Bottom-Aligned"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_001"
-      }
-    }
-    Assets {
-      Id: 11059868012886398829
-      Name: "Rope"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_rope_001"
-      }
-    }
-    Assets {
-      Id: 11152005065311380263
-      Name: "Ring Thin - Large"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ring_thin_lg_001_ref"
-      }
-    }
-    Assets {
-      Id: 4499104847313732196
-      Name: "Pyramid - Polished"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_pyramid_hq_001"
-      }
-    }
-    Assets {
-      Id: 11689680051475832885
-      Name: "Roboto Slab Black"
-      PlatformAssetType: 28
-      PrimaryAsset {
-        AssetType: "FontAssetRef"
-        AssetId: "RobotoSlabBlack_ref"
-      }
-    }
-    Assets {
-      Id: 2463354235971610030
-      Name: "Cube - Polished"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_hq_test_001"
-      }
-    }
-    Assets {
-      Id: 5760915064523727563
-      Name: "Sphere"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 4289160600405295316
-      Name: "Metal Basic 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_basic_001"
+        AssetId: "sm_cylinder_hq_test_001"
       }
     }
     Assets {
@@ -3764,20 +3692,84 @@ Assets {
       }
     }
     Assets {
-      Id: 9392192798366320444
-      Name: "Cylinder - Polished"
-      PlatformAssetType: 1
+      Id: 4289160600405295316
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_hq_test_001"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
       }
     }
     Assets {
-      Id: 2783568351353208516
-      Name: "3DG WIND sign client"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: " -- Custom \r\nlocal CLIENT_FOLDER = script.parent\r\nlocal SK_ALL = script:GetCustomProperty(\"sk_all\"):WaitForObject()\r\nlocal SK_PANEL_1 = script:GetCustomProperty(\"sk_panel_1\"):WaitForObject()\r\nlocal SK_PANEL_2 = script:GetCustomProperty(\"sk_panel_2\"):WaitForObject()\r\nlocal SK_ROPE = script:GetCustomProperty(\"sk_rope\"):WaitForObject()\r\nlocal CURVE_WIND = script:GetCustomProperty(\"windMov\")\r\n--user exposed\r\nlocal WIND_POWER = CLIENT_FOLDER:GetCustomProperty(\"windPower\")\r\nlocal OFFSET = CLIENT_FOLDER:GetCustomProperty(\"movOffset\") \r\n--local \r\nlocal skrot = SK_ALL:GetRotation()\r\nlocal skrot_pn1 = SK_PANEL_1:GetRotation()\r\nlocal skrot_pn2 = SK_PANEL_2:GetRotation()\r\nlocal skrot_rope = SK_ROPE:GetRotation()\r\n\r\n\r\nfunction Tick ()\r\n\tlocal cr = CURVE_WIND:GetValue(time() + OFFSET)\r\n\tskrot.x = cr * WIND_POWER\r\n\tskrot.y = cr * WIND_POWER\r\n\tskrot_pn1.y = cr * (WIND_POWER *5) * -1 \r\n\tskrot_pn2.y =skrot_pn1.y  * -1\r\n\tSK_ALL:SetRotation(skrot)\r\n\tSK_PANEL_1:SetRotation(skrot_pn1)\r\n\tSK_PANEL_2:SetRotation(skrot_pn2) \r\n\tskrot_rope.x = cr * (WIND_POWER *10) \r\n\tSK_ROPE:SetRotation(skrot_rope)\r\nend "
+      Id: 5760915064523727563
+      Name: "Sphere"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_sphere_002"
+      }
+    }
+    Assets {
+      Id: 2463354235971610030
+      Name: "Cube - Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_hq_test_001"
+      }
+    }
+    Assets {
+      Id: 11689680051475832885
+      Name: "Roboto Slab Black"
+      PlatformAssetType: 28
+      PrimaryAsset {
+        AssetType: "FontAssetRef"
+        AssetId: "RobotoSlabBlack_ref"
+      }
+    }
+    Assets {
+      Id: 4499104847313732196
+      Name: "Pyramid - Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_pyramid_hq_001"
+      }
+    }
+    Assets {
+      Id: 11152005065311380263
+      Name: "Ring Thin - Large"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_ring_thin_lg_001_ref"
+      }
+    }
+    Assets {
+      Id: 11059868012886398829
+      Name: "Rope"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_rope_001"
+      }
+    }
+    Assets {
+      Id: 11532960868733969370
+      Name: "Cylinder - Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_001"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
       }
     }
     PrimaryAssetId {
@@ -3787,4 +3779,3 @@ Assets {
   }
   SerializationVersion: 100
 }
-IncludesAllDependencies: true

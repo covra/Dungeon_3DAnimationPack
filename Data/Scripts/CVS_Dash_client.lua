@@ -8,7 +8,6 @@ local playerCam = localPlayer:GetActiveCamera()
 local isDashActive = false
 
 function onCast (ability)
-	Events.Broadcast("staffLight", true)
 	isDashActive = true
 	local player = ability.owner
 	playerCam  = ability.owner:GetActiveCamera()	
@@ -23,7 +22,6 @@ function onExecute (ability)
 	UI_EDGE_LINES.visibility = Visibility.FORCE_OFF
 	isDashActive = false
 	Task.Wait(0.1)
-	Events.Broadcast("staffLight", false)
 end
 
 function Tick (deltaTime)

@@ -453,29 +453,12 @@ Assets {
       }
     }
     Assets {
-      Id: 13879261150098673801
-      Name: "Wispy Fog Volume VFX"
-      PlatformAssetType: 8
+      Id: 11287401449638019609
+      Name: "Container - Square Thin 01"
+      PlatformAssetType: 1
       PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_fog_volume_vfx"
-      }
-    }
-    Assets {
-      Id: 17336113691712122372
-      Name: "3DG WIND whispy Fog client"
-      PlatformAssetType: 3
-      TextAsset {
-        Text: "\r\n -- Custom \r\nlocal CLIENT_FOLDER = script.parent\r\nlocal FOG = script:GetCustomProperty(\"WispyFogVolumeVFX\"):WaitForObject()\r\nlocal CURVE_WIND = script:GetCustomProperty(\"windMov\")\r\nlocal TRIGG_TOGGLE = script:GetCustomProperty(\"toggleTrig\"):WaitForObject()\r\nlocal DECAL_GROUND = TRIGG_TOGGLE:FindChildByType(\"Decal\")\r\n\r\n--user exposed\r\nlocal WIND_POWER = CLIENT_FOLDER:GetCustomProperty(\"windPower\")\r\nlocal OFFSET = CLIENT_FOLDER:GetCustomProperty(\"movOffset\") \r\nlocal TIME_WIND_ENABLED = CLIENT_FOLDER:GetCustomProperty(\"timeWindEnabled\")  \r\n--local\r\nlocal windEnabled = false\r\nlocal origScaleFog = FOG:GetSmartProperty(\"Particle Scale Multiplier\")\r\nlocal origDensityFog = FOG:GetSmartProperty(\"Density\")\r\n\r\n\r\nfunction Tick (dt)\r\n\tif not windEnabled then return end \r\n\tlocal cr = CURVE_WIND:GetValue(time() + OFFSET)\r\n\tlocal vWind = Vector3.ONE * WIND_POWER\r\n\tvWind.z = WIND_POWER / 2\r\n\tFOG:SetSmartProperty(\"Wind Speed\", vWind)\r\n\tprint(cr)\r\nend\r\n\r\nfunction OnInteracted(trg, other)\r\n\tif other:IsA(\"Player\") then\r\n\t\tlocal player = other\r\n\t\twindEnabled = true\r\n\t\tDECAL_GROUND:SetSmartProperty(\"Color\", Color.CYAN)\r\n\t\tTask.Spawn(function()\r\n\t\t\tfor i = FOG:GetSmartProperty(\"Particle Scale Multiplier\"),1, -0.1 do \r\n\t\t\t\tFOG:SetSmartProperty(\"Particle Scale Multiplier\", i)\r\n\t\t\t\tTask.Wait(0.1)\r\n\t\t\tend \r\n\t\tend)\r\n\t\tTask.Spawn(function()\r\n\t\t\tfor i = FOG:GetSmartProperty(\"Density\"),1, -0.1 do \r\n\t\t\t\tFOG:SetSmartProperty(\"Density\", i)\r\n\t\t\t\tTask.Wait(0.1)\r\n\t\t\tend \r\n\t\tend)\r\n\t\tTask.Spawn(function()\r\n\t\t\twindEnabled = false\r\n\t\t\tDECAL_GROUND:SetSmartProperty(\"Color\", Color.ORANGE)\r\n\t\t\tFOG:SetSmartProperty(\"Particle Scale Multiplier\", origScaleFog)\r\n\t\t\tFOG:SetSmartProperty(\"Density\", origDensityFog)\r\n\t\t\tFOG:Play()\r\n\t\tend, TIME_WIND_ENABLED *2)\r\n\t\tTask.Wait(TIME_WIND_ENABLED)\r\n\t\tFOG:Stop()\r\n\tend\r\nend\r\n\r\nTRIGG_TOGGLE.interactedEvent:Connect(OnInteracted)"
-      }
-    }
-    Assets {
-      Id: 7133381548813139657
-      Name: "2D Basic Shapes Decal"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "dcl_basicShapes"
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_container_square_thin_ref"
       }
     }
     Assets {
@@ -488,12 +471,21 @@ Assets {
       }
     }
     Assets {
-      Id: 11287401449638019609
-      Name: "Container - Square Thin 01"
-      PlatformAssetType: 1
+      Id: 7133381548813139657
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_container_square_thin_ref"
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
+      }
+    }
+    Assets {
+      Id: 13879261150098673801
+      Name: "Wispy Fog Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_fog_volume_vfx"
       }
     }
     PrimaryAssetId {
@@ -503,4 +495,3 @@ Assets {
   }
   SerializationVersion: 100
 }
-IncludesAllDependencies: true

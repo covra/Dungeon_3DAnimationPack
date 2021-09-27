@@ -1,8 +1,8 @@
 Name: "Animaciones"
 RootId: 7264516668055820329
 Objects {
-  Id: 15353338996778780638
-  Name: "CVS Lore_Point"
+  Id: 10337458665640118715
+  Name: "3D Animations Dungeon Pack   README"
   Transform {
     Scale {
       X: 1
@@ -11,7 +11,6 @@ Objects {
     }
   }
   ParentId: 7264516668055820329
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -20,91 +19,16 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11023060853214570059
+      key: 9626246280403467357
       value {
         Overrides {
           Name: "Name"
-          String: "CVS Lore_Point"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3887.86646
-            Y: 3553.74658
-            Z: 46.7176666
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.536479771
-            Y: 0.536479771
-            Z: 0.536479771
-          }
+          String: "3D Animations Dungeon Pack   README"
         }
       }
     }
     TemplateAsset {
-      Id: 8826801574432767540
-    }
-  }
-}
-Objects {
-  Id: 6853266656491808633
-  Name: " DTY Mesh Cube "
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7264516668055820329
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18044236564034150620
-      value {
-        Overrides {
-          Name: "Name"
-          String: " DTY Mesh Cube "
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3417.22192
-            Y: 4316.63281
-            Z: 504.6987
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.649225473
-            Y: 0.649225473
-            Z: 0.649225473
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17009655764280245312
+      Id: 9659815771539532004
     }
   }
 }

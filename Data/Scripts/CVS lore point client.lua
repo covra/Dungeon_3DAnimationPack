@@ -2,17 +2,14 @@
 local CLIENT_CONTEXT = script.parent
 local trigger = CLIENT_CONTEXT:FindChildByName("TriggerDetect")
 local trigger_INTERACT = CLIENT_CONTEXT:FindChildByName("TriggerInteract")
-
-
-
-
 local LORE_CAM = CLIENT_CONTEXT:FindChildByType("Camera")
 local MOVE_STONE = CLIENT_CONTEXT:FindChildByName("moveGroup")
 local SFX = CLIENT_CONTEXT:FindChildByName("SFX")
 local BEAM_ENERGY = CLIENT_CONTEXT:FindChildByName("beamEnergy")
 local SKY_BEAM_SPARKS = CLIENT_CONTEXT:FindChildByName("Basic Sparks")
 local SKY_BEAM = CLIENT_CONTEXT:FindChildByName("Laser Beam VFX")
-local FADE_IMAGE = CLIENT_CONTEXT:FindDescendantByName("fadeImage")
+local FADE = script:GetCustomProperty("UIFade"):WaitForObject()
+
 local UI_LORE_TEXT = script:GetCustomProperty("UILore_text")
 
 local propFX_charging = script:GetCustomProperty("FX_charging")
@@ -112,23 +109,22 @@ function skyBeamActions ()
 end 
 
 function fadeImage()
-	FADE_IMAGE:SetColor(Color.WHITE)
-	local whiteAlpha = Color.New(1,1,1)
 	for i=0, 1, 0.1 do
-		whiteAlpha.a = i
-		FADE_IMAGE:SetColor(whiteAlpha)
+		FADE.opacity = i
 		Task.Wait(0.1)
 	end 
-	local UI_Lore_Messg = World.SpawnAsset(UI_LORE_TEXT)
-	Task.Wait()
-	Events.Broadcast("FadeInOut", true, 0.6)
-	Task.Wait()
-	for i=1, 0, -0.1 do
-		whiteAlpha.a = i
-		FADE_IMAGE:SetColor(whiteAlpha)
-		Task.Wait(0.1)
-	end 
-	
+	local UI_Lore_Messg = World.SpawnAsset(UI_LORE_TEXT,{parent = FADE})
+	local btn = UI_Lore_Messg:FindDescendantByType("UIButton")		
+	btn.clickedEvent:Connect(function()  
+		localPlayer:ClearOverrideCamera()
+		UI.SetCursorVisible(false)
+		UI.SetCanCursorInteractWithUI(false)
+		btn.visibility = Visibility.FORCE_OFF
+		FADE.opacity = 0
+		endReading()
+	end)
+	if not UI.IsCursorVisible() then UI.SetCursorVisible(true) end 
+	if not UI.CanCursorInteractWithUI() then UI.SetCanCursorInteractWithUI(true) end 
 end
 
 function loreCamAction()
@@ -136,7 +132,6 @@ function loreCamAction()
 end 
 
 function endReading()
-	--localPlayer:ClearOverrideCamera(1)
 	localPlayer.clientUserData.isReading = false
 	Events.BroadcastToServer("isCharging" , false)
 	Task.Wait()
