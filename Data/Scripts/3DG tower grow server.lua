@@ -20,6 +20,9 @@ function init()
 	end 
 end
 
+function onRequest ()
+	init()
+end 
 
-init()
 --Place here the desired starting method
+Events.Connect("3DG.GrowScale", onRequest)

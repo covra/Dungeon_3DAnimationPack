@@ -2,7 +2,7 @@
 local BRIDGE_COLLIDE = script:GetCustomProperty("collideBridge"):WaitForObject()
 --local
 local isBusy = false
-
+local origSCALE = BRIDGE_COLLIDE:GetWorldScale()
 
 
 function onCallBridge (isEnabledBridge, isEnded)
@@ -35,7 +35,7 @@ function setCollide (isEnabledCollide)
 	if not isEnabledCollide then 
 		BRIDGE_COLLIDE:SetWorldScale(Vector3.ZERO)
 	elseif isEnabledCollide then
-		BRIDGE_COLLIDE:SetWorldScale(Vector3.ONE)
+		BRIDGE_COLLIDE:SetWorldScale(origSCALE)
 	end 
 end 
 

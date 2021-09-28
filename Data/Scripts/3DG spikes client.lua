@@ -8,6 +8,8 @@ local SFX_CHAIN_STOP = script:GetCustomProperty("chainStopSFX"):WaitForObject()
 local SFX_SPIKES_OUT = script:GetCustomProperty("spikeOutSFX"):WaitForObject()
 local SFX_RESET = script:GetCustomProperty("resetElementSFX"):WaitForObject()
 local FX_IMPACT = script:GetCustomProperty("3dgImpactHammer")
+local HITTRG = script:GetCustomProperty("HITtrig"):WaitForObject()
+
 --user exposed
 local TIME_REPEAT = CLIENT_ROOT:GetCustomProperty("timeRepeatCycle")
 --local
@@ -85,7 +87,7 @@ end
 
 function smash()
 	GROUP_L:MoveTo(GROUP_L:GetPosition() + Vector3.New(0,470,0),0.1,true)
-	Events.BroadcastToServer("3DG.Spikes")
+	Events.BroadcastToServer("3DG.Spikes",HITTRG:GetReference())
 	GROUP_R:MoveTo(GROUP_R:GetPosition() + Vector3.New(0,-470,0),0.1,true)
 	World.SpawnAsset(FX_IMPACT, {position = CLIENT_ROOT:GetWorldPosition() + Vector3.UP * 50 })
 	Task.Wait(1.5)

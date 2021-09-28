@@ -52,7 +52,7 @@ function startAnim()
 		end 
 		Task.Spawn(function()
 			local posFX = (rk:GetWorldRotation() * rk:GetWorldPosition()):GetNormalized() * 500
-			World.SpawnAsset(FX_DUST,{position = posFX})
+			World.SpawnAsset(FX_DUST,{position = rk:GetWorldPosition()})
 		end,0.4)
 		Task.Wait(0.1)
 	end 

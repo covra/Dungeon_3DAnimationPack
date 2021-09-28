@@ -7,7 +7,7 @@ Assets {
       RootId: 12991422483710916232
       Objects {
         Id: 12991422483710916232
-        Name: "3DG Moving Rocks"
+        Name: "3DG Moving Rock"
         Transform {
           Scale {
             X: 1
@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 4953563542802092465
         ChildIds: 13520408222816931065
-        ChildIds: 12137907579809100885
+        ChildIds: 14536677110137745387
         ChildIds: 11777336967647344634
         UnregisteredParameters {
           Overrides {
@@ -95,12 +95,6 @@ Assets {
         }
         ParentId: 12991422483710916232
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:triggerHit"
-            ObjectReference {
-              SubObjectId: 12137907579809100885
-            }
-          }
           Overrides {
             Name: "cs:bounces"
             SimpleCurve {
@@ -346,9 +340,15 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:ClientContext"
+            Name: "cs:pointZero"
             ObjectReference {
-              SubObjectId: 1048270499437602073
+              SubObjectId: 14536677110137745387
+            }
+          }
+          Overrides {
+            Name: "cs:3dgMovinRockTemplate"
+            AssetReference {
+              Id: 3587285313735043516
             }
           }
         }
@@ -371,310 +371,12 @@ Assets {
         }
       }
       Objects {
-        Id: 12137907579809100885
-        Name: "triggerHit"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 5.87628508
-            Y: 5.87628508
-            Z: 5.87628508
-          }
-        }
-        ParentId: 12991422483710916232
-        ChildIds: 1048270499437602073
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:sphere"
-          }
-        }
-      }
-      Objects {
-        Id: 1048270499437602073
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.170175537
-            Y: 0.170175537
-            Z: 0.170175537
-          }
-        }
-        ParentId: 12137907579809100885
-        ChildIds: 15996403646324817638
-        ChildIds: 17492112807251834165
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:FX_bounce"
-            AssetReference {
-              Id: 7840154582877350341
-            }
-          }
-          Overrides {
-            Name: "cs:FX_hit_player"
-            AssetReference {
-              Id: 2503291743019663467
-            }
-          }
-          Overrides {
-            Name: "cs:FX_destroyRock"
-            AssetReference {
-              Id: 10085178036560388638
-            }
-          }
-          Overrides {
-            Name: "cs:time_speed"
-            Float: 1
-          }
-          Overrides {
-            Name: "cs:offsetBounce"
-            Float: -100
-          }
-          Overrides {
-            Name: "cs:powerBounces"
-            Int: 100
-          }
-          Overrides {
-            Name: "cs:rotationSpeed"
-            Vector {
-              Y: 5
-            }
-          }
-          Overrides {
-            Name: "cs:triggerHit"
-            ObjectReference {
-              SubObjectId: 12137907579809100885
-            }
-          }
-          Overrides {
-            Name: "cs:FX_bounce:tooltip"
-            String: "FX when rock bounces against the ground"
-          }
-          Overrides {
-            Name: "cs:FX_hit_player:tooltip"
-            String: "FX when rock hits against any scene object"
-          }
-          Overrides {
-            Name: "cs:FX_destroyRock:tooltip"
-            String: "FX when rock arrives to the end of the designed path"
-          }
-          Overrides {
-            Name: "cs:offsetBounce:tooltip"
-            String: "Position offset of on the Z axis to spawn the FX bounce. Default: -100"
-          }
-          Overrides {
-            Name: "cs:time_speed:tooltip"
-            String: "This will be the time, the rock spend on going to the next point of the path. Default = 2"
-          }
-          Overrides {
-            Name: "cs:powerBounces:tooltip"
-            String: "This value  will multiply the values of the curve of movement (on Z) of the rock. Higher values means the rock will reach more height. Default = 100"
-          }
-          Overrides {
-            Name: "cs:rotationSpeed:tooltip"
-            String: "Rotation speed  / direction of the rock "
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 15996403646324817638
-        Name: "3DG moving rocks client"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1048270499437602073
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:artGeo"
-            ObjectReference {
-              SubObjectId: 17492112807251834165
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 14491976480866921730
-          }
-        }
-      }
-      Objects {
-        Id: 17492112807251834165
-        Name: "artGeo"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1048270499437602073
-        ChildIds: 8061722345884485926
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 8061722345884485926
-        Name: "Rock 03"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 2.32988834
-            Y: 2.32988834
-            Z: 2.32988834
-          }
-        }
-        ParentId: 17492112807251834165
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 13710161915374590549
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 11777336967647344634
-        Name: "Path"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12991422483710916232
-        ChildIds: 14536677110137745387
-        ChildIds: 13106536370925618645
-        ChildIds: 5767701349123947874
-        ChildIds: 3452655501107805392
-        ChildIds: 13500144843401351484
-        ChildIds: 12676592591178429431
-        ChildIds: 12707258307285471173
-        ChildIds: 17771930176519771864
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        NetworkContext {
-          Type: Server
-        }
-      }
-      Objects {
         Id: 14536677110137745387
-        Name: "Cube"
+        Name: "pointZero"
         Transform {
           Location {
+            X: -0.00227975845
+            Y: -147.891663
           }
           Rotation {
           }
@@ -684,7 +386,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11777336967647344634
+        ParentId: 12991422483710916232
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -728,6 +430,46 @@ Assets {
             }
             BoundsScale: 1
           }
+        }
+      }
+      Objects {
+        Id: 11777336967647344634
+        Name: "Path"
+        Transform {
+          Location {
+            X: -0.00241470337
+            Y: 1088.63
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12991422483710916232
+        ChildIds: 13106536370925618645
+        ChildIds: 5767701349123947874
+        ChildIds: 3452655501107805392
+        ChildIds: 13500144843401351484
+        ChildIds: 12676592591178429431
+        ChildIds: 12707258307285471173
+        ChildIds: 17771930176519771864
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
         }
       }
       Objects {
@@ -1163,15 +905,6 @@ Assets {
             BoundsScale: 1
           }
         }
-      }
-    }
-    Assets {
-      Id: 13710161915374590549
-      Name: "Rock 03"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_rock_generic_003"
       }
     }
     Assets {

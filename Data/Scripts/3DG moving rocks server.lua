@@ -1,15 +1,15 @@
  -- Custom 
-local TRG_HIT = script:GetCustomProperty("triggerHit"):WaitForObject()
-local ROOT = TRG_HIT.parent
+local ROOT = script.parent
 local CURVE_BOUNCES = script:GetCustomProperty("bounces")
 local PATH = (script:GetCustomProperty("Path"):WaitForObject()):GetChildren()
-local CLIENT_FOLDER = script:GetCustomProperty("ClientContext"):WaitForObject()
+local MOVING_ROCK_TEMPLATE = script:GetCustomProperty("3dgMovinRockTemplate")
+local POINT_ZERO = script:GetCustomProperty("pointZero"):WaitForObject()
 --assets
-local FX_BOUNCE = CLIENT_FOLDER:GetCustomProperty("FX_bounce")
-local FX_DESTROY = CLIENT_FOLDER:GetCustomProperty("FX_destroyRock")
+local FX_BOUNCE = nil
+local FX_DESTROY = nil
 --user exposed
-local TIME_SPEED = CLIENT_FOLDER:GetCustomProperty("time_speed")
-local POWER_B = CLIENT_FOLDER:GetCustomProperty("powerBounces")
+local TIME_SPEED = nil
+local POWER_B = nil
 local START_OFFSET = ROOT:GetCustomProperty("startOffset")
 --local
 local tZ = time()
@@ -25,10 +25,18 @@ local nextPoint = PATH[1]
 
 --INIT
 function Init()
-	Task.Wait()
-	isStarted = true
+	Task.Wait(START_OFFSET)
+	local ROCK = World.SpawnAsset(MOVING_ROCK_TEMPLATE,{position = POINT_ZERO:GetWorldPosition() })	
+	TRG_HIT = ROCK:FindDescendantByType("Trigger")
+	CLIENT_FOLDER = ROCK:FindDescendantByName("ClientContext")
+	FX_BOUNCE = CLIENT_FOLDER:GetCustomProperty("FX_bounce")
+	FX_DESTROY = CLIENT_FOLDER:GetCustomProperty("FX_destroyRock")
+	TIME_SPEED = CLIENT_FOLDER:GetCustomProperty("time_speed")
+	POWER_B = CLIENT_FOLDER:GetCustomProperty("powerBounces")
+	TRG_HIT.destroyEvent:Connect( onDestroy )
 	trgList = TRG_HIT.beginOverlapEvent:Connect(onHit)
 	Task.Wait()
+	isStarted = true
 	Task.Spawn(function()
 		for _,np in pairs (PATH) do
 			nextPoint = np
@@ -73,6 +81,8 @@ end
 --EVENT DESTROY self object
 function onDestroy(selfO)
 	trgList:Disconnect()
+	Task.Wait(1)
+	Init()
 end 
 
 
@@ -80,7 +90,7 @@ end
 function Tick ()
 	if not isStarted then return end 
 	tN = time() - tZ
-	cp = CURVE_BOUNCES:GetValue(tN + START_OFFSET)
+	cp = CURVE_BOUNCES:GetValue(tN)
 	currentP = TRG_HIT:GetPosition()
 	currentP.z = cp * POWER_B
 	if currentP.z < 20  then 
@@ -98,5 +108,5 @@ function Tick ()
 	TRG_HIT:RotateTo(quat, TIME_SPEED, true)
 end 
 
-TRG_HIT.destroyEvent:Connect( onDestroy )
+
 Init()

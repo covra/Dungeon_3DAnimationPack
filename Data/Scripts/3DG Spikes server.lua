@@ -4,20 +4,23 @@ local TRG_HIT = script:GetCustomProperty("Trigger"):WaitForObject()
 --local
 local isBusy = false
 
-function onRequest ()
-	if not isBusy  then 
-		isBusy = true
-		local playerList = TRG_HIT:GetOverlappingObjects()
-		if #playerList > 0 then 
-			for _, p in pairs (playerList) do 
-				if p:IsA("Player") then 
-					hitPlayer(p)
-				end
-			end 
+function onRequest (player,refe)
+	local ref = refe:GetObject()
+	if ref == TRG_HIT then 
+		if not isBusy  then 
+			isBusy = true
+			local playerList = TRG_HIT:GetOverlappingObjects()
+			if #playerList > 0 then 
+				for _, p in pairs (playerList) do 
+					if p:IsA("Player") then 
+						hitPlayer(p)
+					end
+				end 
+			end
+			Task.Wait(2)
+			isBusy = false
 		end
-		Task.Wait(2)
-		isBusy = false
-	end
+	end 
 end 
 
 
