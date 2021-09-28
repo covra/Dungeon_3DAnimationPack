@@ -36,6 +36,7 @@ Objects {
   ChildIds: 8046193036959806618
   ChildIds: 8436498635769429847
   ChildIds: 14119176709348249851
+  ChildIds: 9381666915296158151
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -48,6 +49,54 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 9381666915296158151
+  Name: "3DG Demolition Ball"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 863117584480452465
+      value {
+        Overrides {
+          Name: "Name"
+          String: "3DG Demolition Ball"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -31066.25
+            Y: -22279.709
+            Z: 1986.25244
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.57692885
+            Y: 1.57692885
+            Z: 1.57692885
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13728689266766178497
+    }
   }
 }
 Objects {

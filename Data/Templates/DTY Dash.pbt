@@ -432,6 +432,7 @@ Assets {
         }
         ParentId: 12973671864506326059
         ChildIds: 1448108808998791500
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
